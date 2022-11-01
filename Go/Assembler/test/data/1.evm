@@ -1,0 +1,11 @@
+# https://twitter.com/721Orbit/status/1501138849887567873
+
+//store in memory
+NUMBER
+RETURNDATASIZE //cheap work around to push 0 on the stack if no external call made
+MSTORE
+
+//return from memory
+PUSH1 32
+RETURNDATASIZE
+RETURN

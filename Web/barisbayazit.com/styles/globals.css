@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    @apply bg-gray-100 dark:bg-black;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.dark {
+    @apply text-white;
+}
+
+.prose {
+    @apply dark:text-gray-300;
+}
+
+.prose strong {
+    @apply dark:text-gray-200 font-extrabold;
+}
+
+.prose a {
+    @apply text-blue-400;
+}
+
+.prose p code {
+    @apply dark:text-gray-200;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+    @apply dark:text-gray-300;
+}
+
+.prose pre {
+    @apply bg-slate-600 dark:bg-slate-800;
+}
+
+.hljs-comment {
+    @apply text-[#1b2222] dark:text-inherit;
+}

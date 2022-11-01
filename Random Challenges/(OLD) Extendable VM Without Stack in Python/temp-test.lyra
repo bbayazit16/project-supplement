@@ -1,0 +1,6 @@
+choose
+jload
+get
+"https://catfact.ninja/fact"
+"fact"
+

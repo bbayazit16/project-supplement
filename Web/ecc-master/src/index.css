@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Dongle';
+  src: local('Dongle'), url('./Font/Dongle-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Dongle';
+  src: local('Dongle'), url('./Font/Dongle-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Dongle';
+  src: local('Dongle'), url('./Font/Dongle-Light.ttf') format('truetype');
+  font-weight: lighter;
+}
+
+html {
+  @apply bg-gray-900 text-white;
+  font-size: 24px;
+}
+
+@layer components {
+  .debug1 {
+    @apply border-4 border-red-500;
+  }
+
+  .debug2 {
+    @apply border-4 border-green-500;
+  }
+
+  .debug3 {
+    @apply border-4 border-blue-500;
+  }
+
+  .debug4 {
+    @apply border-4 border-yellow-500;
+  }
+
+  .debug5 {
+    @apply border-4 border-purple-500;
+  }
+}

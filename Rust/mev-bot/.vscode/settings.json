@@ -1,0 +1,10 @@
+{
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "rust": "cargo run",
+    },
+    "rust-analyzer.diagnostics.disabled": [
+        "unresolved-proc-macro"
+    ],
+    "files.autoSave": "off",
+}

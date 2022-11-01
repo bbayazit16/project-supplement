@@ -1,0 +1,12 @@
+{
+    "port": 3000,
+    "firebaseConfig": {
+        "apiKey": "AIzaSyCNwLSPiis26aVm7tNvy8oZNXml8n7Sf6Q",
+        "authDomain": "democrazy-3b5c8.firebaseapp.com",
+        "databaseURL": "https://democrazy-3b5c8-default-rtdb.europe-west1.firebasedatabase.app",
+        "projectId": "democrazy-3b5c8",
+        "storageBucket": "democrazy-3b5c8.appspot.com",
+        "messagingSenderId": "9980967541",
+        "appId": "1:9980967541:web:1d56858ec8f4c748b1963c"
+    }
+}

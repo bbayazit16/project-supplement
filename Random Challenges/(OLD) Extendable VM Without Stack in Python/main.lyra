@@ -1,0 +1,86 @@
+jumpi
+eq
+sha256
+"hi"
+"8f434346648f6b96df89dda901c5176b10a6d83961dd3c1ac88b59b2dc327aa4"
+0x80
+
+print
+"This should be skipped"
+
+jumpdest
+0x20
+# fake jumpdest location
+
+print
+"This should be skipped too!"
+
+jumpdest
+0x80
+
+push
+0
+
+iszero
+ptr
+
+pop
+
+jumpi
+ptr
+0x40
+
+jumpdest
+0x60
+
+# nothing should happen here, as jumpdest 0x60 is currently not being called
+return
+
+jumpdest
+0x40
+
+pop
+
+eq
+add
+1
+1
+2
+
+not
+ptr
+
+pop
+
+eq
+int
+"0"
+ptr
+pop
+
+gt
+ptr
+0x2
+
+pop
+
+jumpi
+ptr
+0xffff
+
+pop
+
+print
+"Stack info:"
+
+stackinfo
+
+print
+"Halting... cya!"
+return
+
+jumpdest
+0xffff
+
+print
+"This should not be printed, because the execution halted already!"

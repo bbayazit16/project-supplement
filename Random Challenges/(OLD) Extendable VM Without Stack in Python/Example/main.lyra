@@ -1,0 +1,14 @@
+choose
+get
+"https://catfact.ninja/fact"
+"length"
+
+stackinfo
+
+add
+ptr
+1
+
+pop
+
+stackinfo
